@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eef7ff;
+  background:
+    radial-gradient(circle at 50% 0%, #0c4c85 0, #061a36 35%, #020817 75%);
+}
+.page { width: min(760px, 100%); margin: auto; padding: 28px 18px 24px; }
+.hero { text-align: center; }
+.logo {
+  width: min(230px, 62vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 35px rgba(0, 191, 255, .45);
+}
+.badge {
+  display: inline-block;
+  margin: 20px 0 8px;
+  padding: 7px 14px;
+  border: 1px solid rgba(0, 220, 255, .5);
+  border-radius: 999px;
+  color: #36e8ff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+h1 { margin: 8px 0; font-size: clamp(30px, 8vw, 52px); }
+.subtitle { color: #aac1d8; margin: 0 auto 24px; }
+.card, .updates {
+  background: rgba(4, 22, 45, .78);
+  border: 1px solid rgba(72, 190, 255, .25);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 15px 45px rgba(0,0,0,.25);
+}
+.version { font-size: 15px; color: #aac1d8; }
+.version strong { color: #fff; }
+.details {
+  display: flex; justify-content: center; gap: 10px;
+  margin: 16px 0;
+}
+.details span {
+  padding: 7px 12px; border-radius: 10px;
+  background: #0b3159; color: #cfeeff; font-size: 13px;
+}
+.download {
+  display: block; text-decoration: none; color: #00101e;
+  background: linear-gradient(90deg, #27e6ff, #198cff);
+  font-weight: 800; letter-spacing: 1px;
+  padding: 16px 20px; border-radius: 14px;
+  transition: transform .15s, filter .15s;
+}
+.download:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.hint { color: #7894ad; font-size: 12px; margin-bottom: 0; }
+.features {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 12px; margin: 18px 0;
+}
+.features div {
+  display: flex; flex-direction: column; align-items: center; gap: 7px;
+  padding: 16px 8px; border-radius: 16px;
+  background: rgba(8, 31, 59, .7);
+  color: #b9cce0; font-size: 13px;
+}
+.features b { font-size: 22px; }
+.updates { text-align: left; margin-top: 18px; }
+.updates h2 { margin-top: 0; }
+.updates li { margin: 9px 0; color: #b9cce0; }
+footer { text-align: center; color: #66819a; font-size: 12px; margin-top: 24px; }
+@media (max-width: 520px) {
+  .features { grid-template-columns: 1fr; }
+}
