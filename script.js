@@ -1,6 +1,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const latestVersion = "1.0.490";
+const latestVersion = "1.0.492";
 
 // روابط التحميل المباشر من GitHub Release
 const apkArm64 =
