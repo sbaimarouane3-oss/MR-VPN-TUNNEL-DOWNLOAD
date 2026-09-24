@@ -2,7 +2,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const latestVersion = "537";
 
-const apkArm64 = "https://github.com/sbaimarouane3-oss/MR-VPN-TUNNEL-DOWNLOAD/releases/download/v537/app-arm64-v8a.apk";
+const apkArm64 = "https://github.com/sbaimarouane3-oss/MR-VPN-TUNNEL-DOWNLOAD/releases/download/v537/App-arm64-v8a.apk";
 const apkV7a = "https://github.com/sbaimarouane3-oss/MR-VPN-TUNNEL-DOWNLOAD/releases/download/v537/app-armeabi-v7a.apk";
 
 document.getElementById("version").textContent = latestVersion;
