@@ -1,13 +1,9 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const latestVersion = "1.0.492";
+const latestVersion = "537";
 
-// روابط التحميل المباشر من GitHub Release
-const apkArm64 =
-  "https://github.com/sbaimarouane3-oss/MR-VPN-TUNNEL-DOWNLOAD/releases/download/v537/app-arm64-v8a.apk";
-
-const apkV7a =
-  "https://github.com/sbaimarouane3-oss/MR-VPN-TUNNEL-DOWNLOAD/releases/download/v537/app-armeabi-v7a.apk";
+const apkArm64 = "https://github.com/sbaimarouane3-oss/MR-VPN-TUNNEL-DOWNLOAD/releases/download/v537/app-arm64-v8a.apk";
+const apkV7a = "https://github.com/sbaimarouane3-oss/MR-VPN-TUNNEL-DOWNLOAD/releases/download/v537/app-armeabi-v7a.apk";
 
 document.getElementById("version").textContent = latestVersion;
 
