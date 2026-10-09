@@ -71,3 +71,30 @@ footer { text-align: center; color: #66819a; font-size: 12px; margin-top: 24px; 
 @media (max-width: 520px) {
   .features { grid-template-columns: 1fr; }
 }
+
+
+.download-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.download small {
+  font-size: 12px;
+  letter-spacing: .5px;
+  opacity: .8;
+}
+.secondary-download {
+  color: #eaf7ff;
+  background: linear-gradient(90deg, #14528a, #0b3159);
+  border: 1px solid rgba(72, 190, 255, .35);
+}
+@media (max-width: 520px) {
+  .download-options { grid-template-columns: 1fr; }
+}
